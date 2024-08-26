@@ -1,5 +1,4 @@
- 
-import React from "react";
+import React from 'react';
 
 type CourseCardProps = {
   title: string;
@@ -67,8 +66,8 @@ type RelatedCoursesProps = {
 const RelatedCourses: React.FC<RelatedCoursesProps> = ({ courses }) => {
   return (
     <section className="mt-9">
-      <h2 className="flex gap-4 text-2xl font-bold leading-tight">
-        <span className="grow text-neutral-50">More Courses by</span>
+      <h2 className="flex gap-2 text-2xl font-bold leading-tight">
+        <span className="text-neutral-50">More Courses by</span>
         <span className="text-orange-500 basis-auto">YouAccel Training</span>
       </h2>
       <div className="mt-4 max-w-full w-[700px]">

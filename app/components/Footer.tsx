@@ -1,9 +1,8 @@
- 
-import React from "react";
+import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="self-end mt-44 w-full max-w-[1240px] max-md:mt-10 max-md:max-w-full">
+    <footer className="self-center mt-44 w-full max-w-[1240px] max-md:mt-10 max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-[43%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow items-start text-base leading-7 text-white max-md:mt-10 max-md:max-w-full">
@@ -97,15 +96,15 @@ const Footer: React.FC = () => {
             <div className="mt-9">
               <a href="#facebook" className="text-white mr-4">
                 Facebook
-              </a>{" "}
+              </a>{' '}
               |
               <a href="#instagram" className="text-white mx-4">
                 Instagram
-              </a>{" "}
+              </a>{' '}
               |
               <a href="#linkedin" className="text-white mx-4">
                 LinkedIn
-              </a>{" "}
+              </a>{' '}
               |
               <a href="#twitter" className="text-white ml-4">
                 Twitter
@@ -115,7 +114,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <hr className="shrink-0 self-end mt-12 max-w-full h-px bg-white border border-white border-solid opacity-50 w-[1240px] max-md:mt-10" />
-      <p className="self-center mt-5 ml-5 text-base leading-8 text-white opacity-60">
+      <p className="text-center  mt-5 ml-5 text-base leading-8 text-white opacity-60">
         © 2023 Maven House
       </p>
     </footer>

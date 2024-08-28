@@ -210,7 +210,7 @@ const WebDevelopmentCourse: React.FC = () => {
                   <div className="flex shrink-0 h-px border-b border-gray-300 w-[132px]" />
                 </div>
                 <h3 className="mt-6 text-xl font-bold tracking-normal leading-7 text-zinc-800">
-                  Subscribe to Udemy's top<br />courses
+                  Subscribe to Udemy&apos;s top<br />courses
                 </h3>
                 <p className="mt-2.5 mr-6 text-sm leading-5 text-zinc-800 max-md:mr-2.5">
                   Get this course, plus 11,000+ of our top-rated courses, with Personal Plan.

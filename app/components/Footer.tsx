@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="self-center mt-44 w-full max-w-[1240px] max-md:mt-10 max-md:max-w-full">
+    <footer className="self-center mt-44 w-full px-8 max-md:mt-10 max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-[43%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow items-start text-base leading-7 text-white max-md:mt-10 max-md:max-w-full">
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <hr className="shrink-0 self-end mt-12 max-w-full h-px bg-white border border-white border-solid opacity-50 w-[1240px] max-md:mt-10" />
+      <hr className="shrink-0 self-end mt-12 max-w-full h-px bg-white border border-white border-solid opacity-50  max-md:mt-10" />
       <p className="text-center  mt-5 ml-5 text-base leading-8 text-white opacity-60">
         © 2023 Maven House
       </p>

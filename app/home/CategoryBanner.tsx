@@ -10,14 +10,14 @@ import bookmark from '../assets/icons/bookmark.svg';
 
 const CategoryBanner = ({ name, image, followers, profession, price }) => {
   return (
-    <div className="hero-banner min-w-[320px] h-[545px] flex flex-col gap-2 items-center p-[25px] rounded-xl bg-white ">
-      <div className="bg-[#FF990033] rounded-xl">
+    <div className="hero-banner min-w-[320px] h-[545px] flex flex-col gap-2 items-center p-[25px] rounded-[2.5rem] bg-white ">
+      <div className="bg-[#FF990033] rounded-[2.5rem]">
         <Image
           src={image}
           alt="banner1"
           width={246}
           height={212}
-          className="rounded-xl object-contain"
+          className="rounded-3xl object-contain"
         />
       </div>
       <div className="info w-full flex items-center justify-between">

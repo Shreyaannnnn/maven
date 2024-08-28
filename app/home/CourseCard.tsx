@@ -1,5 +1,4 @@
- 
-import React from "react";
+import React from 'react';
 
 interface CourseCardProps {
   imageSrc: string;
@@ -16,9 +15,9 @@ const CourseCard: React.FC<CourseCardProps> = ({
   rating,
   isDark = false,
 }) => {
-  const textColor = isDark ? "text-orange-500" : "text-zinc-900";
-  const bgColor = isDark ? "bg-neutral-800" : "bg-white";
-  const borderColor = isDark ? "" : "border border-orange-500 border-solid";
+  const textColor = isDark ? 'text-orange-500' : 'text-zinc-900';
+  const bgColor = isDark ? 'bg-neutral-800' : 'bg-white';
+  const borderColor = isDark ? '' : 'border border-orange-500 border-solid';
 
   return (
     <div
@@ -42,7 +41,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
           </span>
           <span
             className={`text-base font-semibold leading-none basis-auto ${
-              isDark ? "text-white" : "text-zinc-600"
+              isDark ? 'text-white' : 'text-zinc-600'
             }`}
           >
             {author}
@@ -51,7 +50,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
         <div className="flex gap-2.5 mt-3">
           <span
             className={`grow text-base font-semibold leading-none ${
-              isDark ? "text-white" : "text-zinc-600"
+              isDark ? 'text-white' : 'text-zinc-600'
             }`}
           >
             {rating.toFixed(1)}

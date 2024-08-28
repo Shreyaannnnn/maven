@@ -10,11 +10,11 @@ import bookmark from '../assets/icons/bookmark.svg';
 
 
 type CategoryBannerProps = {
-  name: string;
-  image: string;
-  followers: number;
-  profession: string;
-  price: number;
+  name: any;
+  image: any;
+  followers: any;
+  profession: any;
+  price: any;
 };
 
 const CategoryBanner = ({

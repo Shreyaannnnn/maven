@@ -8,7 +8,22 @@ import youtube from '../assets/icons/youtube.svg';
 import mail from '../assets/icons/mail.svg';
 import bookmark from '../assets/icons/bookmark.svg';
 
-const CategoryBanner = ({ name: any, image: any, followers: any, profession: any, price: any }) => {
+
+type CategoryBannerProps = {
+  name: string;
+  image: string;
+  followers: number;
+  profession: string;
+  price: number;
+};
+
+const CategoryBanner = ({
+  name,
+  image,
+  followers,
+  profession,
+  price,
+}: CategoryBannerProps) => {
   return (
     <div className="hero-banner min-w-[320px] h-[545px] flex flex-col gap-2 items-center p-[25px] rounded-[2.3rem] bg-white ">
       <div className="bg-[#FF990033] rounded-[2rem]">

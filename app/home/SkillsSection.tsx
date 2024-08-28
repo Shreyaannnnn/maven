@@ -1,22 +1,21 @@
- 
-import React from "react";
+import React from 'react';
 
 const SkillsSection: React.FC = () => {
   const skills = [
-    "Web Devlopment",
-    "Java Script",
-    "React JS",
-    "Angular",
-    "Java",
-    "Android Devlopment",
+    'Web Devlopment',
+    'Java Script',
+    'React JS',
+    'Angular',
+    'Java',
+    'Android Devlopment',
   ];
 
   return (
-    <section className="flex flex-col items-center px-20 py-24 mt-36 w-full bg-white max-md:px-5 max-md:pt-24 max-md:mt-10 max-md:max-w-full">
-      <h2 className="self-end text-6xl font-semibold leading-none text-orange-500 max-md:max-w-full max-md:text-4xl">
+    <section className="flex flex-col items-center justify-center px-20 py-24 mt-36 w-full bg-white max-md:px-5 max-md:pt-24 max-md:mt-10 max-md:max-w-full">
+      <h2 className="self-center text-6xl font-semibold leading-none text-orange-500 max-md:max-w-full max-md:text-4xl">
         All the skills you need in one place
       </h2>
-      <p className="self-start mt-8 text-base text-zinc-600 max-md:max-w-full">
+      <p className="self-center mt-8 text-base text-zinc-600 max-md:max-w-full">
         From critical skills to technical topics, Udemy supports your
         professional development.
       </p>
@@ -50,8 +49,8 @@ const SkillsSection: React.FC = () => {
               key={index}
               className={`gap-2 self-stretch py-2 px-5 ${
                 index === 0
-                  ? "text-white bg-orange-500"
-                  : "border-2 border-orange-500 border-solid"
+                  ? 'text-white bg-orange-500'
+                  : 'border-2 border-orange-500 border-solid'
               } min-h-[40px] rounded-[52px]`}
             >
               {skill}

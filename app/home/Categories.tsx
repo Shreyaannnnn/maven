@@ -34,8 +34,8 @@ const Categories: React.FC = () => {
   ];
 
   return (
-    <section className="self-center mt-6 w-screen  md:w-full px-8 ">
-      <div className="flex gap-5 max-md:flex-col items-center">
+    <section className="self-center mt-6 w-screen  md:w-full px-6 py-12 ">
+      <div className="flex gap-6 justify-center max-md:flex-col items-center">
         {/* <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
           <img
             loading="lazy"
@@ -51,16 +51,16 @@ const Categories: React.FC = () => {
           profession={'Barcelono, ESD'}
           price={'$2999'}
         />
-        <div className="min-w-[320px] relative flex flex-col gap-2 items-center p-[30px] rounded-xl">
+        <div className="min-w-[320px] relative flex flex-col gap-2 items-center overflow-hidden box-border rounded-xl">
           <Image
-            className="object-cover relative"
+            className="object-contain block max-w-full  relative"
             src={banner4}
             alt="banner4"
           />
-          <h3 className="text-5xl font-extrabold absolute top-[140px] left-[72px]">
+          <h3 className="text-5xl font-extrabold absolute top-[140px] left-[42px]">
             Show All
           </h3>
-          <p className="text-lg absolute top-[190px] left-[72px]">Creators</p>
+          <p className="text-lg absolute top-[190px] left-[42px]">Creators</p>
         </div>
 
         <CategoryBanner

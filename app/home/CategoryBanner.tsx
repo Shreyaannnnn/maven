@@ -10,8 +10,8 @@ import bookmark from '../assets/icons/bookmark.svg';
 
 const CategoryBanner = ({ name, image, followers, profession, price }) => {
   return (
-    <div className="hero-banner min-w-[320px] h-[545px] flex flex-col gap-2 items-center p-[25px] rounded-[2.5rem] bg-white ">
-      <div className="bg-[#FF990033] rounded-[2.5rem]">
+    <div className="hero-banner min-w-[320px] h-[545px] flex flex-col gap-2 items-center p-[25px] rounded-[2.3rem] bg-white ">
+      <div className="bg-[#FF990033] rounded-[2rem]">
         <Image
           src={image}
           alt="banner1"

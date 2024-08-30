@@ -49,7 +49,7 @@ const Categories: React.FC = () => {
           image={banner1}
           followers={'825k'}
           profession={'Developer'}
-          price={'0.4 EDU'}
+          price={'0.04 EDU'}
         />
         <div className="min-w-[320px] relative flex flex-col gap-2 items-center overflow-hidden box-border rounded-xl">
           <Image
@@ -68,14 +68,14 @@ const Categories: React.FC = () => {
           image={banner2}
           followers={'561k'}
           profession={'Designer'}
-          price={'0.1 EDU'}
+          price={'0.01 EDU'}
         />
         <CategoryBanner
           name={'Stephanie'}
           image={banner3}
           followers={'720k'}
           profession={'Art Director'}
-          price={'0.2 EDU'}
+          price={'0.02 EDU'}
         />
         {/* {categories.map((category, index) => (
           <div

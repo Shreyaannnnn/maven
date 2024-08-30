@@ -25,7 +25,7 @@ const PlanCard: React.FC<PlanCardProps> = ({
 
   return (
     <div
-      className={`flex flex-col grow  pb-32  w-full rounded-lg ${bgColor} border-t-8 border-t-orange-500 max-md:pb-24 max-md:mt-5 md:min-w-[400px] `}
+      className={`flex flex-col grow  pb-32 w-[25vw]  rounded-lg ${bgColor} border-t-8 border-t-orange-500  max-md:mt-5 mx-0 `}
     >
       <div className="flex flex-col items-start w-full text-base  ">
         <div className="w-full bg-[#D9D9D9] pl-2 py-2">

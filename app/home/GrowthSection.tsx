@@ -2,7 +2,7 @@ import React from 'react';
 
 const GrowthSection: React.FC = () => {
   return (
-    <section className="flex flex-col self-start px-36 mt-32 mr-11 w-full max-w-[1298px] max-md:mt-10 max-md:mr-2.5 max-md:max-w-full">
+    <section className="flex flex-col self-start mt-32 ml-[10vw] w-full max-md:mt-10 max-md:mr-2.5 max-md:max-w-full">
       <div className="w-full self-center">
         <h2 className="self-start text-6xl font-semibold text-orange-500 leading-[70px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
           Accelerate growth — <span className="text-white">for you or </span>{' '}

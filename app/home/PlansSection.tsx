@@ -100,7 +100,7 @@ const PlansSection: React.FC = () => {
   ];
 
   return (
-    <section className="self-center mt-20 w-full  max-md:mt-10 max-md:max-w-full ">
+    <section className="self-center p-0 mt-20 w-full  max-md:mt-10 max-md:max-w-full ">
       <div className="flex justify-center gap-5 max-md:flex-col ">
         <div className="flex flex-col  max-md:ml-0 max-md:w-full rounded-xl ">
           <PlanCard

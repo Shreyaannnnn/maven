@@ -47,7 +47,7 @@ const CategoryBanner = ({
             <Image src={bluetick} alt="bluetick" width={25} height={25} />
           </h3>
 
-          <p className="text-gray-500 text-md">{profession}</p>
+          {/* <p className="text-gray-500 text-md">{profession}</p> */}
         </div>
         <div className="flex flex-col items-center">
           <h3 className="text-xl text-black font-extrabold">{followers}</h3>
@@ -84,13 +84,13 @@ const CategoryBanner = ({
             />
           </div>
           <p className="px-3 py-2 bg-green-100/55 text-green-600 font-semibold rounded-3xl">
-            Comedy
+            {profession}
           </p>
         </div>
 
         <div className="w-full">
           <div className="w-full flex justify-between mb-2">
-            <p className="text-gray-400 text-lg">Advertising Price</p>
+            <p className="text-gray-400 text-lg">Private Coaching Price</p>
             <span className="text-black text-xl font-bold">{price}</span>
           </div>
           <div className="w-full flex gap-1 justify-between items-center">
@@ -111,7 +111,7 @@ const CategoryBanner = ({
               />
             </div>
             <button className="bg-orange-400 rounded-lg px-4 py-1 flex flex-nowrap">
-              <a href="/" className="text-white text-lg">
+              <a href="/course" className="text-white text-lg">
                 Hire Now
               </a>
             </button>

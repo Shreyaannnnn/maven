@@ -22,12 +22,12 @@ const Section: React.FC<SectionProps> = ({
   <div className="flex flex-col p-px mt-3 max-w-full rounded-lg border-t border-r border-l border-gray-300 w-[700px]">
     <div className="flex flex-wrap gap-5 justify-between px-6 py-4 w-full bg-orange-500 rounded-lg text-neutral-50 max-md:px-5 max-md:max-w-full">
       <div className="flex gap-3 text-base font-bold leading-tight">
-        <img
+        {/* <img
           // loading="lazy"
           src={banner1}
           className="object-contain shrink-0 w-5 aspect-square"
           alt=""
-        />
+        /> */}
         <div className="my-auto basis-auto">{title}</div>
       </div>
       <div className="my-auto text-sm leading-snug">

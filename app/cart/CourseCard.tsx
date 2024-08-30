@@ -35,7 +35,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
         />
       </div>
       <h3 className="mt-3 text-base font-bold leading-5 text-zinc-100">
-        {title}
+        Web Development
       </h3>
       <p className="mt-2 text-xs leading-snug text-neutral-500">{instructor}</p>
       <div className="flex gap-1.5 mt-2.5 whitespace-nowrap">

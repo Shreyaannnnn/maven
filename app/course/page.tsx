@@ -8,10 +8,13 @@ import CourseReviews from './CourseReviews';
 import RelatedCourses from './RelatedCourses';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import banner1 from '../assets/banner1.jpg'
+import Image from 'next/image';
+import Link from 'next/link';
 
 const WebDevelopmentCourse: React.FC = () => {
   const courseHeaderData = {
-    Name: "Gary Vay",
+    Name: "Gary Van",
     Description: "Chris Do is an Emmy award-winning director, designer, strategist and educator. He’s also the Chief Strategist and CEO of Blind, executive producer of The Skool, and the Founder of The Futur™. If you need executive consulting, Chris is your best bet.",
     rating: 4.7,
     ratingCount: 1719,
@@ -131,7 +134,8 @@ const WebDevelopmentCourse: React.FC = () => {
             <aside className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col pb-6 mx-auto w-full bg-white rounded-lg border-b border-gray-300 shadow-[0px_2px_4px_rgba(0,0,0,0.08)] max-md:mt-10">
               <div className="flex overflow-hidden relative flex-col w-full text-base font-bold leading-tight text-center text-white rounded-lg aspect-[1.78]">
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9757c5f8107537cf6005432daf7040f2a9cbc1ee56bfc3e3051ad9b73020283b?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-cover absolute inset-0 size-full" alt="Course preview" />
+                {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9757c5f8107537cf6005432daf7040f2a9cbc1ee56bfc3e3051ad9b73020283b?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-cover absolute inset-0 size-full" alt="Course preview" /> */}
+                <Image src={banner1} alt='' className="object-cover absolute inset-0 size-full" />
                 <div className="flex relative flex-col items-center px-16 pt-16 pb-5 rounded-lg border border-gray-300 border-solid max-md:px-5">
                   <div className="flex flex-col max-w-full w-[135px]">
                     <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9bf0175933746f46b30874393bd832659d2a27d508f584fefc6ded998d35714b?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-contain self-center w-16 rounded-lg aspect-square" alt="Play button" />
@@ -145,17 +149,19 @@ const WebDevelopmentCourse: React.FC = () => {
               </div>
               <div className="flex flex-col px-6 mt-5 w-full max-md:px-5">
                 <div className="flex gap-3.5 items-center self-start text-base leading-none text-zinc-800">
-                  <div className="grow self-stretch text-2xl font-bold">$10.99</div>
-                  <div className="self-stretch my-auto text-neutral-500">$49.99</div>
+                  <div className="grow self-stretch text-2xl font-bold">0.04 EDU</div>
+                  {/* <div className="self-stretch my-auto text-neutral-500">$49.99</div> */}
                   <div className="self-stretch my-auto">78% off</div>
                 </div>
                 <div className="flex gap-1 self-start mt-2.5 text-sm font-bold leading-snug text-red-700">
                   <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3ddae6cb66e75c7771790b311f4e167e70ee358dcae0720a841ed654f3bd1360?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-contain shrink-0 self-start w-4 aspect-square" alt="" />
                   <div className="basis-auto">5 days left at this price!</div>
                 </div>
+                <Link href='cart'>
                 <button className="px-16 py-5 mt-5 text-base font-bold leading-tight text-center text-white bg-orange-500 rounded-lg max-md:px-5">
                   Add to cart
                 </button>
+                </Link>
                 <p className="self-center mt-5 text-xs leading-snug text-center text-neutral-500">
                   30-Day Money-Back Guarantee
                 </p>

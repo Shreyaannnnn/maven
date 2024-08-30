@@ -1,5 +1,6 @@
  
 import React from "react";
+import banner1 from '../assets/banner1.jpg'
 
 type SectionProps = {
   title: string;
@@ -22,8 +23,8 @@ const Section: React.FC<SectionProps> = ({
     <div className="flex flex-wrap gap-5 justify-between px-6 py-4 w-full bg-orange-500 rounded-lg text-neutral-50 max-md:px-5 max-md:max-w-full">
       <div className="flex gap-3 text-base font-bold leading-tight">
         <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/736fd2b4bd23d55632282dceaecbf72ba58c91b1a8f59af9e5fb1d7e0293aa08?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f"
+          // loading="lazy"
+          src={banner1}
           className="object-contain shrink-0 w-5 aspect-square"
           alt=""
         />
@@ -43,12 +44,12 @@ const Section: React.FC<SectionProps> = ({
                 lecture.isPreview ? "text-orange-500" : ""
               }`}
             >
-              <img
+              {/* <img
                 loading="lazy"
                 src={`http://b.io/ext_${25 + index}-`}
                 className="object-contain shrink-0 w-4 aspect-[0.8]"
                 alt=""
-              />
+              /> */}
               <div className="my-auto basis-auto">{lecture.title}</div>
             </div>
           ))}

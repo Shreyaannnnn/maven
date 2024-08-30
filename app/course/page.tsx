@@ -1,4 +1,3 @@
- 
 import React from 'react';
 import CourseHeader from './CourseHeader';
 import RelatedTopics from './RelatedTopics';
@@ -12,8 +11,8 @@ import Header from '../components/Header';
 
 const WebDevelopmentCourse: React.FC = () => {
   const courseHeaderData = {
-    title: "Internet and Web Development Fundamentals",
-    subtitle: "Learn how the Internet Works and Setup a Testing & Production Web Server",
+    Name: "Gary Vay",
+    Description: "Chris Do is an Emmy award-winning director, designer, strategist and educator. He’s also the Chief Strategist and CEO of Blind, executive producer of The Skool, and the Founder of The Futur™. If you need executive consulting, Chris is your best bet.",
     rating: 4.7,
     ratingCount: 1719,
     studentCount: 172644,
@@ -110,26 +109,26 @@ const WebDevelopmentCourse: React.FC = () => {
   ];
 
   return (
-    <div className="flex overflow-hidden flex-col bg-neutral-800 pb-[20px] ">
+    <div className="flex flex-col bg-neutral-800 pb-5 lg:pb-10">
       <Header />
-      <main className="flex flex-col items-start self-center mt-14 w-full max-w-screen-xl max-md:mt-10 max-md:max-w-full">
-        <nav className="flex gap-3.5 text-xl leading-tight" aria-label="Breadcrumb">
-          <a href="#development" className="grow text-gray-200">Development</a>
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/54bda22312d74656bc85a7879c419cd1f14c980fc07c2455d04753c66f76ae10?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-contain shrink-0 w-6 aspect-square" alt="" />
-          <a href="#web-development" className="text-orange-500 basis-auto">Web Development</a>
+      <main className="flex flex-col  mt-10 mx-auto w-full max-w-screen-xl lg:mt-14 lg:px-4">
+        <nav className="flex gap-2 text-sm sm:text-base px-5 md:text-lg lg:text-xl leading-tight text-gray-200 max-w-full">
+          <a href="#development" className="text-gray-200">Development</a>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/54bda22312d74656bc85a7879c419cd1f14c980fc07c2455d04753c66f76ae10?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" alt="" />
+          <a href="#web-development" className="text-orange-500">Web Development</a>
         </nav>
-        <div className="mt-14 w-full max-w-[1204px] max-md:mt-10 max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col">
-          <div className="flex flex-col w-[67%] max-md:ml-0 max-md:w-full">
-            <CourseHeader {...courseHeaderData} />
-            <RelatedTopics topics={relatedTopics} />
-            <CourseFeatures features={courseFeatures} />
-            <CourseContent sections={courseSections} />
-            <InstructorInfo {...instructorInfo} />
-            <CourseReviews reviews={courseReviews} />
-            <RelatedCourses courses={relatedCourses} />
-          </div>
-          <aside className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+        <div className="mt-10 lg:mt-14 mx-auto w-full px-4 sm:px-6 md:px-8">
+          <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
+            <div className="lg:w-2/3">
+              <CourseHeader {...courseHeaderData} />
+              {/* <RelatedTopics topics={relatedTopics} /> */}
+              {/* <CourseFeatures features={courseFeatures} /> */}
+              {/* <CourseContent sections={courseSections} /> */}
+              {/* <InstructorInfo {...instructorInfo} /> */}
+              {/* <CourseReviews reviews={courseReviews} /> */}
+              {/* <RelatedCourses courses={relatedCourses} /> */}
+            </div>
+            <aside className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col pb-6 mx-auto w-full bg-white rounded-lg border-b border-gray-300 shadow-[0px_2px_4px_rgba(0,0,0,0.08)] max-md:mt-10">
               <div className="flex overflow-hidden relative flex-col w-full text-base font-bold leading-tight text-center text-white rounded-lg aspect-[1.78]">
                 <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9757c5f8107537cf6005432daf7040f2a9cbc1ee56bfc3e3051ad9b73020283b?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-cover absolute inset-0 size-full" alt="Course preview" />
@@ -204,18 +203,18 @@ const WebDevelopmentCourse: React.FC = () => {
                     Apply
                   </button>
                 </form>
-                <div className="flex gap-2.5 items-start mt-6 text-xs leading-snug text-center whitespace-nowrap text-neutral-500">
+                {/* <div className="flex gap-2.5 items-start mt-6 text-xs leading-snug text-center whitespace-nowrap text-neutral-500">
                   <div className="flex shrink-0 h-px border-b border-gray-300 w-[132px]" />
                   <div className="self-stretch">or</div>
                   <div className="flex shrink-0 h-px border-b border-gray-300 w-[132px]" />
-                </div>
-                <h3 className="mt-6 text-xl font-bold tracking-normal leading-7 text-zinc-800">
+                </div> */}
+                {/* <h3 className="mt-6 text-xl font-bold tracking-normal leading-7 text-zinc-800">
                   Subscribe to Udemy&apos;s top<br />courses
                 </h3>
                 <p className="mt-2.5 mr-6 text-sm leading-5 text-zinc-800 max-md:mr-2.5">
                   Get this course, plus 11,000+ of our top-rated courses, with Personal Plan.
-                </p>
-                <button className="px-14 py-4 mt-5 text-base font-bold leading-tight text-center rounded-lg border border-solid border-zinc-800 text-zinc-800 max-md:px-5">
+                </p> */}
+                {/* <button className="px-14 py-4 mt-5 text-base font-bold leading-tight text-center rounded-lg border border-solid border-zinc-800 text-zinc-800 max-md:px-5">
                   Try Personal Plan for free
                 </button>
                 <p className="self-center mt-2.5 text-xs leading-snug text-center text-neutral-500">
@@ -223,44 +222,13 @@ const WebDevelopmentCourse: React.FC = () => {
                 </p>
                 <p className="self-center mt-4 text-xs leading-snug text-center text-orange-500">
                   Cancel anytime
-                </p>
+                </p> */}
               </div>
             </div>
-          </aside>
-        </div>
-        </div>
-
-        <section className="flex flex-col px-4 py-5 mt-9 max-w-full rounded-lg border border-gray-300 border-solid w-[700px]">
-          <h2 className="self-start text-base font-bold leading-tight text-neutral-50">
-            Top companies offer this course to their employees
-          </h2>
-          <p className="flex flex-wrap gap-5 mt-2 mr-6 text-sm leading-snug max-md:mr-2.5">
-            <span className="flex-auto text-neutral-500 max-md:max-w-full">
-              This course was selected for our collection of top-rated courses trusted by businesses worldwide.
-            </span>
-            <a href="#learn-more" className="text-orange-500">Learn more</a>
-          </p>
-          <div className="flex flex-wrap gap-5 justify-between mt-7 max-md:max-w-full">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/923f993eaed1f95d5a4334fc2bd0feace4a8d08455c70ad4d2a98b0ddf3e63e8?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-contain shrink-0 max-w-full aspect-[3.03] w-[115px]" alt="Company logo 1" />
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b8117caa6b051217bea5550facaa9439b10612ecaab0deae497c64ca3b0dc61?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-contain shrink-0 w-11 aspect-[1.16]" alt="Company logo 2" />
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/69f1359f95eabddc0ab9a00e834180b6d54d7de9cee538999f11240fbaf46bad?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-contain shrink-0 aspect-[1.76] w-[67px]" alt="Company logo 3" />
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7269cff25da926b4b577335f19cd538e734b0f179290ba889c82bb771c462777?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-contain shrink-0 max-w-full aspect-[3.03] w-[115px]" alt="Company logo 4" />
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/394500536416d44ee65480bb9e0374c008f721b2c5cf59e3548800ab14c3b474?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-contain shrink-0 max-w-full aspect-[3.03] w-[115px]" alt="Company logo 5" />
+          </aside> 
           </div>
-        </section>
-      </main>
-      <section className="flex flex-col self-center px-16 py-14 mt-16 ml-6 w-full bg-orange-500 rounded-3xl max-w-[1131px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
-        <h2 className="self-start text-6xl font-semibold text-white leading-[70px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
-          Learning focused on your goals with <span className="text-white">Maven House</span>
-        </h2>
-        <div className="flex flex-wrap gap-5 justify-between items-start mt-20 w-full text-base font-medium tracking-wide leading-loose text-white max-md:mt-10 max-md:max-w-full">
-          <a href="#start-journey" className="flex gap-2 items-center self-start px-9 py-4 border border-white border-solid bg-white bg-opacity-0 rounded-[50px] max-md:px-5">
-            <span className="self-stretch my-auto">Start Your Development Journey Now!</span>
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/82e5f78730830935a6dc874cf4bd87efbae252d2b05056dcaafb2d6478a2378c?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-contain shrink-0 self-stretch my-auto aspect-square fill-white w-[13px]" alt="" />
-          </a>
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b2c748fdcee4794963f29aef40a9f0f33c4953c42b1e16be1e6ff3f6ecbaeae4?placeholderIfAbsent=true&apiKey=779eb5ea1637423490797e9103078d7f" className="object-contain shrink-0 self-end mt-10 w-9 aspect-square fill-white" alt="" />
         </div>
-      </section>
+      </main>
       <Footer />
     </div>
   );

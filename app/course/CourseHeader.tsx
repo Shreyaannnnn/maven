@@ -2,8 +2,8 @@
 import React from "react";
 
 type CourseHeaderProps = {
-  title: string;
-  subtitle: string;
+  Name: string;
+  Description: string;
   rating: number;
   ratingCount: number;
   studentCount: number;
@@ -12,8 +12,8 @@ type CourseHeaderProps = {
 };
 
 const CourseHeader: React.FC<CourseHeaderProps> = ({
-  title,
-  subtitle,
+  Name,
+  Description,
   rating,
   ratingCount,
   studentCount,
@@ -23,12 +23,12 @@ const CourseHeader: React.FC<CourseHeaderProps> = ({
   return (
     <header className="flex flex-col items-start w-full max-md:mt-10 max-md:max-w-full">
       <h1 className="self-stretch text-2xl font-semibold text-orange-500 max-md:mr-2.5 max-md:max-w-full">
-        {title}
+        {Name}
       </h1>
       <p className="mt-3 text-xl font-light text-white max-md:max-w-full">
-        {subtitle}
+        {Description}
       </p>
-      <div className="flex gap-2 items-start mt-6">
+      {/* <div className="flex gap-2 items-start mt-6">
         <span className="grow self-stretch text-sm font-bold text-amber-400">
           {rating.toFixed(1)}
         </span>
@@ -51,7 +51,7 @@ const CourseHeader: React.FC<CourseHeaderProps> = ({
             {studentCount.toLocaleString()} students
           </span>
         </div>
-      </div>
+      </div> */}
       <div className="flex gap-1.5 mt-3 text-sm">
         <span className="grow font-light text-white">Created by</span>
         <span className="font-semibold text-orange-500">{createdBy}</span>

@@ -7,6 +7,7 @@ import tiktok from '../assets/icons/tiktok.svg';
 import youtube from '../assets/icons/youtube.svg';
 import mail from '../assets/icons/mail.svg';
 import bookmark from '../assets/icons/bookmark.svg';
+import Link from 'next/link';
 
 
 type CategoryBannerProps = {
@@ -25,8 +26,9 @@ const CategoryBanner = ({
   price,
 }: CategoryBannerProps) => {
   return (
-    <div className="hero-banner min-w-[320px] h-[545px] flex flex-col gap-2 items-center p-[25px] rounded-[2.3rem] bg-white ">
+    <div className="hero-banner flex flex-col gap-2 items-center p-[25px] rounded-[2.3rem] bg-white ">
       <div className="bg-[#FF990033] rounded-[2rem]">
+        <Link href='course'>
         <Image
           src={image}
           alt="banner1"
@@ -34,8 +36,11 @@ const CategoryBanner = ({
           height={212}
           className="rounded-3xl object-contain"
         />
+        </Link>
       </div>
-      <div className="info w-full flex items-center justify-between">
+
+      <Link href='course' className="info w-full flex items-center justify-between">
+      {/* <div className="info w-full flex items-center justify-between"> */}
         <div>
           <h3 className="text-black font-bold text-xl flex gap-2 ">
             {name}
@@ -48,7 +53,10 @@ const CategoryBanner = ({
           <h3 className="text-xl text-black font-extrabold">{followers}</h3>
           <span className="text-gray-500 text-md">Followers</span>
         </div>
-      </div>
+      {/* </div> */}
+      </Link>
+
+
       <hr className=" mt-2 h-[5px] w-full text-gray-600" />
       <div className="flex flex-col justify-between items-center w-full h-full">
         <div className="social w-full flex gap-4 justify-between items-center ">
@@ -75,7 +83,7 @@ const CategoryBanner = ({
               alt="instagram"
             />
           </div>
-          <p className="px-6 py-2 bg-green-100/55 text-green-600 font-semibold rounded-3xl">
+          <p className="px-3 py-2 bg-green-100/55 text-green-600 font-semibold rounded-3xl">
             Comedy
           </p>
         </div>
@@ -102,7 +110,7 @@ const CategoryBanner = ({
                 height={20}
               />
             </div>
-            <button className="bg-orange-400 rounded-lg px-4 py-2 flex flex-nowrap">
+            <button className="bg-orange-400 rounded-lg px-4 py-1 flex flex-nowrap">
               <a href="/" className="text-white text-lg">
                 Send Message
               </a>

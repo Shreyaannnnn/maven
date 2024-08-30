@@ -77,7 +77,6 @@ const Categories: React.FC = () => {
           profession={'Education Director'}
           price={'$499'}
         />
-
         {/* {categories.map((category, index) => (
           <div
             key={index}

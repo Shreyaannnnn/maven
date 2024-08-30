@@ -63,7 +63,7 @@ const Categories: React.FC = () => {
           <p className="text-lg absolute top-[190px] left-[42px]">Creators</p>
         </div>
 
-        {/* <CategoryBanner
+        <CategoryBanner
           name={'Chris Do'}
           image={banner2}
           followers={'561k'}
@@ -76,7 +76,7 @@ const Categories: React.FC = () => {
           followers={'720k'}
           profession={'Education Director'}
           price={'$499'}
-        /> */}
+        />
         {/* {categories.map((category, index) => (
           <div
             key={index}

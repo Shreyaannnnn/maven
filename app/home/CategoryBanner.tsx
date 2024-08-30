@@ -112,7 +112,7 @@ const CategoryBanner = ({
             </div>
             <button className="bg-orange-400 rounded-lg px-4 py-1 flex flex-nowrap">
               <a href="/" className="text-white text-lg">
-                Send Message
+                Hire Now
               </a>
             </button>
           </div>

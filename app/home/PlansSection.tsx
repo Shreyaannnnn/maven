@@ -100,13 +100,13 @@ const PlansSection: React.FC = () => {
   ];
 
   return (
-    <section className="self-center p-0 mt-20 w-full  max-md:mt-10 max-md:max-w-full ">
+    <section id='plans' className="self-center p-0 mt-20 w-full  max-md:mt-10 max-md:max-w-full ">
       <div className="flex justify-center gap-5 max-md:flex-col ">
         <div className="flex flex-col  max-md:ml-0 max-md:w-full rounded-xl ">
           <PlanCard
             title="Personal Plan"
             subtitle="For you"
-            price="Starting at $9 per month"
+            price="Starting at $7 per month"
             features={personalPlanFeatures}
             isPersonal={true}
           />
@@ -116,7 +116,7 @@ const PlansSection: React.FC = () => {
           <PlanCard
             title="Team Plan"
             subtitle="For Your Team"
-            price="Starting at $9 per month"
+            price="Starting at $10 per month"
             features={teamPlanFeatures}
             isPersonal={true}
           />
@@ -126,7 +126,7 @@ const PlansSection: React.FC = () => {
           <PlanCard
             title="Enterprise Plan"
             subtitle="For Your Whole Organisation"
-            price="Starting at $9 per month"
+            price="Starting at $14 per month"
             features={enterprisePlanFeatures}
             isPersonal={true}
           />

@@ -9,7 +9,7 @@ const CoursesSection: React.FC = () => {
       title: 'The Complete 2024 Web Development Bootcamp',
       author: 'Dr. Angela Yu',
       rating: 4.0,
-      isDark: false,
+      isDark: true,
     },
     {
       imageSrc:

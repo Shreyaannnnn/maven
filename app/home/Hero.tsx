@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <section className="flex flex-col items-center mt-14 text-white max-md:mt-10 max-md:max-w-full">
       <h1 className="text-7xl font-semibold text-center max-md:max-w-full max-md:text-4xl">
-        Connect with Content <span className="text-orange-500">Creators</span>{" "}
+        Connect with Content <br/> <span className="text-orange-500">Creators</span>{" "}
         in Your <span className="text-orange-500">Niche</span>
       </h1>
       <form className="flex flex-wrap gap-10 self-center py-2 pr-2 pl-7 mt-6 max-w-full rounded-3xl bg-neutral-700 w-[605px] max-md:pl-5">

@@ -92,7 +92,7 @@ const Header: React.FC = () => {
         </div>
         {isConnected?
         (<button className="gap-2 self-stretch px-6 py-4 font-medium tracking-wide leading-loose text-white bg-orange-500 rounded-[50px] max-md:px-5">
-          {signer}
+          {`${signer.slice(0, 3)}....${signer.slice(-3)}`}
         </button>)
       :
       (<button onClick={connectWallet} className="gap-2 self-stretch px-6 py-4 font-medium tracking-wide leading-loose text-white bg-orange-500 rounded-[50px] max-md:px-5">

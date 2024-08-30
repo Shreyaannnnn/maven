@@ -90,7 +90,7 @@ const CategoryBanner = ({
 
         <div className="w-full">
           <div className="w-full flex justify-between mb-2">
-            <p className="text-gray-400 text-lg">Private Coaching Price</p>
+            <p className="text-gray-400 text-lg">Coaching Price</p>
             <span className="text-black text-xl font-bold">{price}</span>
           </div>
           <div className="w-full flex gap-1 justify-between items-center">
